@@ -44,6 +44,12 @@ main{
         border-radius: 8px  0  0 8px;
         object-fit: cover;
     }
+    img.imgDesktop{
+        display: block;
+    }
+    img.imgMobile{
+        display: none;
+    }
     .content{
         display: flex;
         flex-direction: column;
@@ -64,7 +70,7 @@ main{
             align-items: center;
             p.price{
                 font-family: 'Fraunces', serif;
-                font-size: 20px;
+                font-size: 25px;
                 color: $dark-cyan;
                 margin-right: 15px;
             }
@@ -89,7 +95,6 @@ main{
                 transition: 0.5s;
             }
             img{
-                position: relative;
                 width: 15px;
                 height: 16px;
                 margin-right: 10px;
@@ -108,6 +113,12 @@ main{
             width: 100%;
             height: 50%;
             border-radius: 8px 8px 0 0 ;
+        }
+        img.imgDesktop{
+            display: none;
+        }
+        img.imgMobile{
+            display: block;
         }
         .content{
             height: 50%;

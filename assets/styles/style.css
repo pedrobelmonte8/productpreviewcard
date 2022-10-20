@@ -35,6 +35,12 @@ main img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main img.imgDesktop {
+  display: block;
+}
+main img.imgMobile {
+  display: none;
+}
 main .content {
   display: flex;
   flex-direction: column;
@@ -56,7 +62,7 @@ main .content .containerPrice {
 }
 main .content .containerPrice p.price {
   font-family: "Fraunces", serif;
-  font-size: 20px;
+  font-size: 25px;
   color: #3c8067;
   margin-right: 15px;
 }
@@ -81,7 +87,6 @@ main .content button:hover {
   transition: 0.5s;
 }
 main .content button img {
-  position: relative;
   width: 15px;
   height: 16px;
   margin-right: 10px;
@@ -98,6 +103,12 @@ main .content button img {
     width: 100%;
     height: 50%;
     border-radius: 8px 8px 0 0;
+  }
+  main img.imgDesktop {
+    display: none;
+  }
+  main img.imgMobile {
+    display: block;
   }
   main .content {
     height: 50%;
